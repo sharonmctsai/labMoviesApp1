@@ -53,6 +53,14 @@ const MovieCard: React.FC<MovieCardProps> = ({movie, selectFavourite}) => {
           </Typography>
         }
       />
+      <CardMedia
+        sx={styles.media}
+        image={
+          movie.poster_path
+            ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+            : img
+        }
+      />
       <CardContent>
         <Grid container>
           <Grid item xs={6}>
