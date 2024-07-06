@@ -34,7 +34,7 @@ const MovieCard: React.FC<MovieCardProps> = ({movie, action}) => {
 
 const isFavourite = favourites.find((id) => id === movie.id)? true : false;//NEW
  
- 
+
  
 
   return (
