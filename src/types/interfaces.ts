@@ -16,12 +16,17 @@ export interface BaseMovieProps {
     vote_count: number;
     favourite?: boolean;
     movies: BaseMovie[];
-    genres: {
-        id: number;
-        name: string;
-      }[];
-
+    genre_ids?: number[];
   }
+
+  export interface MovieDetailsProps extends BaseMovieProps {
+    genres: {
+      id: number;
+      name: string;
+    }[];
+  }
+  export type FilterOption = "title" | "genre";
+
 
   export interface MovieImage {
     file_path: string;
