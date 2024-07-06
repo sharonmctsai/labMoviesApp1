@@ -52,3 +52,9 @@ export interface BaseMovieProps {
     movie: MovieDetailsProps;
     images: MovieImage[];
   }
+
+  export interface Review{
+    id: string;
+    content: string
+    author: string
+  }
